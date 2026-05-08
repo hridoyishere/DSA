@@ -1,4 +1,5 @@
 # Find the maximum element in an array
+
 def find_max(arr):
     if not arr:
         return None

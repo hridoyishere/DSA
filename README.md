@@ -24,16 +24,17 @@ I have organized my learning into numbered modules for easy navigation:
 
 ## Technical Details
 
-- **Language:** C++ and JavaScript
+- **Language:** C++ ,Python and JavaScript
 - **Focus:** Step by step.
 - **Goal:** Time & Space Complexity Analysis and How to think like a solver.
 
 ---
 ## How to Use
 
-For Run : example 
+For Run C++ : example 
 
 cd path/to/your/DSA/01-Arrays-Basics;
+
 
 g++ "Find Maximum Element.cpp" -o max
 ./max
