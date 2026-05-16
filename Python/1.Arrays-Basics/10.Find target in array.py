@@ -10,6 +10,10 @@ def Find(arr,target):
         if n ==target:
             return n
     return "not found"
+
+
+
 arr=[1,2,3,4,5,9]
 target=9
+
 print("Target is :",Find(arr,target))
