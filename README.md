@@ -4,7 +4,7 @@ Welcome to my DSA repository! This project is a systematic log of my journey mas
 
 ## Repository Contents
 
-I have organized my learning into numbered modules for easy navigation:
+I have organized my C++ learning into numbered modules for easy navigation:
 
 | # | Topic | Key Concepts & Patterns | Status |
 | :--- | :--- | :--- | :---: |
