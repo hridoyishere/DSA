@@ -1,15 +1,17 @@
 # Reverse a String
-# Create a function that takes a string as argument and returns the reversed string.
 # Examples
 # reverse_string("Hello World") ➞ "dlroW olleH"
 
-def reverse_string(s):
-    chars = list(s)
-    left, right = 0, len(chars) - 1
-    while left < right:
-        chars[left], chars[right] = chars[right], chars[left]
-        left += 1
-        right -= 1
-    return ''.join(chars)
+def reverse_string(text):
+
+    reversed_text = ""
+
+    for i in range(len(text)-1, -1, -1):
+        reversed_text += text[i]
+
+    return reversed_text
+
 
 print(reverse_string("Hello World"))
+
+
