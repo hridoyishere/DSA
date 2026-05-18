@@ -1,6 +1,6 @@
 # Data Structures and Algorithms (DSA) Roadmap
 
-Welcome to my DSA repository! This project is a systematic log of my journey mastering problem-solving patterns and data structures using C++. My goal is to build a strong foundation in algorithmic thinking and optimization.
+Welcome to my DSA repository! This project is a systematic log of my journey mastering problem-solving patterns and data structures using C++,Python and JavaScript. My goal is to build a strong foundation in algorithmic thinking and optimization.
 
 ## Repository Contents
 

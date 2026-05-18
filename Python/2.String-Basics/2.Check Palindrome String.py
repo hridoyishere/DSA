@@ -1,5 +1,5 @@
 # Check Palindrome String or not 
-# example str= "racecar" output= not Palindrome string
+# example str= "racecar" output= True
 
 
 def Check(text):
