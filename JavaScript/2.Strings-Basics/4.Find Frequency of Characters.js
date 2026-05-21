@@ -12,6 +12,7 @@ const Find=(text)=>{
     let fre={}
 
     for (let i=0 ; i <text.length; i++){
+        
         if(fre[text[i]]){
             fre[text[i]] +=1
         }else{
