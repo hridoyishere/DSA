@@ -1,41 +1,26 @@
 // Rotate Array
-//example: arr[] = {1, 2, 3, 4, 5}, k = 2 => output: {4, 5, 1, 2, 3}
+// examaple arr=[1,2,3,4,5,6,7,8,9,10,11]; output= 11,10,9,8,7,6,5,4,3,2,1
 
 
 #include <iostream>
 using namespace std;
 
-void rotateArray(int arr[], int n, int k) {
-    k = k % n; 
-    int temp[k];
 
-    for (int i = 0; i < k; i++) {
-        temp[i] = arr[n - k + i];
-    }
+void Reverse ( int arr[],int n){
+    int newArr[n];
 
-    for (int i = n - 1; i >= k; i--) {
-        arr[i] = arr[i - k];
-    }
-
-    for (int i = 0; i < k; i++) {
-        arr[i] = temp[i];
+    for (int i=n-1; i >-1; i--){
+        cout << arr[i] << " ";
     }
 }
 
-int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 2;
-    cout << "Original array: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-    rotateArray(arr, n, k);
-    cout << "Array after rotation: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+int main(){
+    int arr[]={1,2,3,4,5,5,6,7,8,9,10,11};
+    int n= sizeof(arr) / sizeof(arr[0]);
+
+    cout << "the Rotate array is :";
+
+    Reverse(arr,n);
+
     return 0;
 }

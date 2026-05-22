@@ -20,6 +20,7 @@ void moveZerosToEnd(int arr[], int n) {
 int main() {
     int arr[] = {10, 0, 8, 0, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
+    
     cout << "Original array: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
