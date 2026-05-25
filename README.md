@@ -31,15 +31,6 @@ I have organized my C++ ,Python and JavaScript learning into numbered modules fo
 | :--- | :--- | :--- | :---: |
 | **01** | [Arrays Basics](./Python/1.Arrays-Basics/) | Traversal, insertion, deletion, and rotation. | done |
 | **02** | [String Basics](./Python/2.String-Basics/) | Palindromes, anagrams, and ASCII manipulation. | done |
-| **03** | [Two Pointers](./C++/03-Two-Pointers/) | Optimal searching in sorted arrays. | learning |
-| **04** | [Sliding Window](./C++/04-Sliding-Window/) | Subarray/Substring optimization ($O(n)$). | done |
-| **05** | [Stack](./C++/05-Stack/) | LIFO, balanced parentheses, and recursion-mimicking. | Learning |
-| **06** | [Queue](./C++/06-Queue/) | FIFO, circular buffers, and BFS foundations. | Learning |
-| **07** | [LinkedList](./C++/07-LinkedList/) | Dynamic memory, node reversal, and cycle detection. | Learinig |
-| **08** | [Trees](./C++/08-Trees/) | Binary Trees, BST, and DFS/BFS traversals. | Learning |
-| **09** | [Binary Search](./C++//09-Binary-Search/) | Searching in $O(\log n)$ and search space reduction. | Learning |
-| **10** | [Recursion](./C++/10-Recursion/) | Base cases, stack memory, and backtracking. | Learning |
-| **11** | [Mixed Problems](./C++/11-Mixed-Problems/) | Challenging problems requiring multiple concepts. | X |
 
 ---
 
@@ -50,31 +41,11 @@ I have organized my C++ ,Python and JavaScript learning into numbered modules fo
 | :--- | :--- | :--- | :---: |
 | **01** | [Arrays Basics](./JavaScript/1.Arrays-Basics/) | Traversal, insertion, deletion, and rotation. | done |
 | **02** | [String Basics](./JavaScript/2.Strings-Basics/) | Palindromes, anagrams, and ASCII manipulation. | done |
-| **03** | [Two Pointers](./C++/03-Two-Pointers/) | Optimal searching in sorted arrays. | done |
-| **04** | [Sliding Window](./C++/04-Sliding-Window/) | Subarray/Substring optimization ($O(n)$). | done |
-| **05** | [Stack](./C++/05-Stack/) | LIFO, balanced parentheses, and recursion-mimicking. | Learning |
-| **06** | [Queue](./C++/06-Queue/) | FIFO, circular buffers, and BFS foundations. | Learning |
-| **07** | [LinkedList](./C++/07-LinkedList/) | Dynamic memory, node reversal, and cycle detection. | Learinig |
-| **08** | [Trees](./C++/08-Trees/) | Binary Trees, BST, and DFS/BFS traversals. | Learning |
-| **09** | [Binary Search](./C++//09-Binary-Search/) | Searching in $O(\log n)$ and search space reduction. | Learning |
-| **10** | [Recursion](./C++/10-Recursion/) | Base cases, stack memory, and backtracking. | Learning |
-| **11** | [Mixed Problems](./C++/11-Mixed-Problems/) | Challenging problems requiring multiple concepts. | X |
 
 ---
 
 ## Technical Details
 
 - **Language:** C++ ,Python and JavaScript
-- **Focus:** Step by step.
+- **Focus:** Step by step learning.
 - **Goal:** Time & Space Complexity Analysis and How to think like a solver.
-
----
-## How to Use
-
-For Run C++ : example 
-
-cd path/to/your/DSA/01-Arrays-Basics;
-
-
-g++ "Find Maximum Element.cpp" -o max
-./max
