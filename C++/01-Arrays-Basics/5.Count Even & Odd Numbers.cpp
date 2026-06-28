@@ -1,5 +1,5 @@
 // Count Even & Odd Numbers in an Array
-//example: arr[] = {10, 5, 8, 20, 3} => output: Even: 3, Odd: 2
+// example: arr[] = {10, 5, 8, 20, 3} => output: Even: 3, Odd: 2
 
 
 #include <iostream>
