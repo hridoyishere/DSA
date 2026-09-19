@@ -8,7 +8,6 @@
 using namespace std;
 
 bool isPalindrome(string str) {
-    // Remove non-alphanumeric characters and convert to lowercase
     str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
     transform(str.begin(), str.end(), str.begin(), ::tolower);
 
