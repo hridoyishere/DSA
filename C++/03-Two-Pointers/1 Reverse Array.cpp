@@ -3,17 +3,21 @@
 // example: arr[] = {1, 2, 3, 4, 5} => output: {5, 4, 3, 2, 1}
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
-void reverseArray(vector<int> &arr)
+void Revers(int arr[], int size)
 {
     int left = 0;
-    int right = arr.size() - 1;
+    int right = size - 1;
 
     while (left < right)
     {
-        swap(arr[left], arr[right]);
+        int temp = arr[left];
+
+        arr[left] = arr[right];
+
+        arr[right] = temp;
+
         left++;
         right--;
     }
@@ -21,22 +25,16 @@ void reverseArray(vector<int> &arr)
 
 int main()
 {
-    vector<int> arr = {1, 2, 3, 4, 5};
-    cout << "Original array: ";
-    for (const auto &element : arr)
-    {
-        cout << element << " ";
-    }
-    cout << endl;
+    int arr[] = {1, 2, 3, 4, 5, 6};
 
-    reverseArray(arr);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Reversed array: ";
-    for (const auto &element : arr)
+    Revers(arr, size);
+
+    for (int i = 0; i < size; i++)
     {
-        cout << element << " ";
+        cout << arr[i] << " ";
     }
-    cout << endl;
 
     return 0;
 }
