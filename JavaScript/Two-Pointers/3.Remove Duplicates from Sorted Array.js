@@ -11,5 +11,5 @@ const RemoveDuplicates = (arr) => {
 let array = [1, 1, 1, 2, 2, 2, 3, 3];
 const len = RemoveDuplicates(array);
 for (i = 0; i < len; i++) {
-  console.log(arrry[i]);
+  console.log(array[i]);
 }
