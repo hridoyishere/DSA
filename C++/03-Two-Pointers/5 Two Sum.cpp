@@ -1,45 +1,37 @@
 // Two Sum (Two Pointers)
-// Given an array of integers and a target sum, find two numbers in the array that add up to the target sum.
-// example: nums[] = {2, 7, 11, 15}, target = 9 => output: {0, 1} (indices of the two numbers)
+// Given an array of integers and a target sum,
+// find two numbers in the array that add up to the target sum.
+// example: nums[] = {2, 7, 11, 15}, target = 9 =>
+// output: {0, 1} (indices of the two numbers)
 
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <utility>
 using namespace std;
 
-vector<int> twoSum(vector<int>& nums, int target) {
-    vector<int> result;
-    sort(nums.begin(), nums.end());
-    int left = 0;
-    int right = nums.size() - 1;
+pair<int, int> TowSum(int arr[], int size, int target)
+{
 
-    while (left < right) {
-        int sum = nums[left] + nums[right];
+    for (int i = 0; i < size; i++)
+    {
+        int need = target - arr[i];
+        for (int j = i + 1; j < size; j++)
+        {
+            if (arr[j] == need)
+            {
+                return {i, j};
+            };
+        };
+    };
+    return {-1, -1};
+};
 
-        if (sum == target) {
-            result.push_back(left);
-            result.push_back(right);
-            break;
-        } else if (sum < target) {
-            left++;
-        } else {
-            right--;
-        }
-    }
-
-    return result;
-}
-
-int main() {
-    vector<int> nums = {2, 7, 11, 15};
+int main()
+{
+    int arr[] = {2, 7, 11, 15};
+    int size = sizeof(arr) / sizeof(arr[0]);
     int target = 9;
-    vector<int> indices = twoSum(nums, target);
+    pair<int, int> result = TowSum(arr, size, target);
 
-    if (!indices.empty()) {
-        cout << "Indices of the two numbers that add up to " << target << ": [" << indices[0] << ", " << indices[1] << "]" << endl;
-    } else {
-        cout << "No two numbers found that add up to " << target << "." << endl;
-    }
-
+    cout << result.first << " " << result.second;
     return 0;
 }
