@@ -6,32 +6,34 @@
 
 #include <iostream>
 #include <utility>
+#include <algorithm>
 using namespace std;
 
-pair<int, int> TowSum(int arr[], int size, int target)
+pair<int, int> twoSum(int arr[], int size, int target)
 {
+    int left = 0;
+    int right = size - 1;
 
-    for (int i = 0; i < size; i++)
+    while (left < right)
     {
-        int need = target - arr[i];
-        for (int j = i + 1; j < size; j++)
-        {
-            if (arr[j] == need)
-            {
-                return {i, j};
-            };
-        };
-    };
+        int sum = arr[left] + arr[right];
+        if (sum == target)
+            return {left, right};
+        else if (sum < target)
+            left++;
+        else
+            right--;
+    }
     return {-1, -1};
-};
+}
 
 int main()
 {
-    int arr[] = {2, 7, 11, 15};
+    int arr[] = {2, 7, 11, 15}; // already sorted
     int size = sizeof(arr) / sizeof(arr[0]);
     int target = 9;
-    pair<int, int> result = TowSum(arr, size, target);
 
+    pair<int, int> result = twoSum(arr, size, target);
     cout << result.first << " " << result.second;
     return 0;
 }
