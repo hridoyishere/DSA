@@ -1,4 +1,4 @@
-function threeSum(nums,target) {
+function threeSum(nums, target) {
   nums.sort((a, b) => a - b);
 
   const result = [];
@@ -38,5 +38,5 @@ function threeSum(nums,target) {
   return result;
 }
 
-console.log(threeSum([-1, 0, 1, 2, -1, -4],0));
+console.log(threeSum([-1, 0, 1, 2, -1, -4], 0));
 // [[-1, -1, 2], [-1, 0, 1]]
