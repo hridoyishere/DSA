@@ -10,7 +10,7 @@ const Cout = (arr) => {
   let Even = 0;
   let Odd = 0;
 
-  for (let i = 0; i < arr.length -1; i++) {
+  for (let i = 0; i < arr.length - 1; i++) {
     if (arr[i] % 2 === 0) {
       Even++;
     } else {
