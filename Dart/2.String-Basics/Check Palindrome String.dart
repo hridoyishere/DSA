@@ -1,8 +1,6 @@
 //Check Palindrome String
 // example str= "racecar" output= True
 
-
-
 bool check(String str) {
   if (str.isEmpty) {
     return false;
